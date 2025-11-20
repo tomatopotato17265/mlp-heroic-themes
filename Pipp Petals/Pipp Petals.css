@@ -56,7 +56,12 @@ body.Pipp_Petals {
   .css-1ty026z {
     background-color: var(--text-secondary);
   }
-  .css-r8u8y9 {
+
+  .content {
+    scrollbar-color: var(--background-lighter) var(--background);
+  }
+  
+  .resizer {
     scrollbar-color: var(--background) var(--background);
   }
 
