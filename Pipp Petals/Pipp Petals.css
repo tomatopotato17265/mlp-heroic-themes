@@ -57,11 +57,7 @@ body.Pipp_Petals {
     background-color: var(--text-secondary);
   }
 
-  .content {
-    scrollbar-color: var(--background-lighter) var(--background);
-  }
-  
-  .resizer {
+  .selectStyle, .selectFieldWrapper .MuiOutlinedInput-root {
     scrollbar-color: var(--background) var(--background);
   }
 
