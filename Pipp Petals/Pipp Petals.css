@@ -57,15 +57,19 @@ body.Pipp_Petals {
     background-color: var(--text-secondary);
   }
 
-  .selectStyle, .selectFieldWrapper .MuiOutlinedInput-root {
-    scrollbar-color: var(--background) var(--background);
-  }
-
   .Settings .Field label,
   .Accessibility .Field label,
   .InstallModal__dialog .Field label,
   .ModifyInstall__dialog .Field label {
     color: var(--text-default);
+  }
+
+  .helpLink {
+    color: var(--text-default);
+  }
+
+  .helpLink:hover {
+    color: var(--background-darker);
   }
 
   .gameConfigContainer .mainInfoWrapper .mainInfo .releaseDate {
@@ -109,6 +113,7 @@ body.Pipp_Petals {
   .toggleWithOnly .toggleSwitchWrapper:hover {
     color: var(--secondary-button-overlay);
   }
+  
 
   .runnerLogin,
   .alternative > svg {
@@ -162,11 +167,37 @@ body.Pipp_Petals {
 
   .dropdown,
   .clickable:hover {
+    color: var(--background-darker);
+  }
+
+  .gameConfigContainer .mainInfoWrapper .mainInfo .developer {
+    color: var(--text-default);
+  }
+
+  .gameConfigContainer .mainInfoWrapper .mainInfo .releaseDate {
     color: var(--text-default);
   }
 
   .clickable {
     color: var(--accent);
+  }
+
+  .toolsWrapper .button,
+  .toolsWrapper .button.outline {
+    color: var(--text-default);
+  }
+
+  .toolsWrapper .button:hover,
+  .toolsWrapper .button.outline:hover {
+    color: var(--background-darker);
+  }
+
+  .tableFieldWrapper th {
+    color: var(--text-default);
+  }
+
+  .reportProblem {
+    color: var(--text-default);
   }
 
   .gameCard .icons {
