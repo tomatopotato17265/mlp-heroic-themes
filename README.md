@@ -11,4 +11,4 @@ Next, visit the folder of the theme you would like to download. Download the `.c
 That's it! Now your local Heroic launcher will have a brand new color scheme inspired by a character from My Little Pony.
 
 ## Adding Themes
-If you would like to add your own theme, please open a [Pull Request](https://github.com/tomatopotato17265/mlp-heroic-themes/pulls) containing a high-resolution image of your character (no pixel-art) and your character's cutie mark. If you've already created all or part of the theme already, please share it! The more information you provide, the faster the theme will be published.
+If you would like to add your own theme, please open an [Issue](https://github.com/tomatopotato17265/mlp-heroic-themes/issues)) containing a high-resolution image of your character (no pixel-art) and your character's cutie mark. If you've already created all or part of the theme already, please share it! The more information you provide, the faster the theme will be published.
