@@ -1,0 +1,6 @@
+# Ignore everything except for folders, css, and png files (as well as the readme)
+*
+!*/
+!*.css
+!*.png
+!README.md
