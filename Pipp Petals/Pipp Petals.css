@@ -1,11 +1,14 @@
 body.Pipp_Petals {
   /* Colors */
-  --text-default: #5F3496;
-  --text-secondary: #e0add3;
+  --primary: #5F3496;
+  --secondary: #e0add3;
+  --accent: var(--primary);
+  --text-default: var(--primary);
+  --text-secondary: var(--secondary);
   --text-tertiary: #F0D9EC;
-  --background: #e0add3;
+  --background: var(--secondary);
   --background-darker: #4B1E82;
-  --background-lighter: #5F3496;
+  --background-lighter: var(--primary);
   --body-background: var(--background);
   --input-background: var(--background-lighter);
   --controller-hints-background: transparent;
@@ -23,8 +26,7 @@ body.Pipp_Petals {
   --success: var(--status-success);
   --success-hover: var(--status-success-hover);
   --danger: #a62b2b;
-  --primary: var(--status-success);
-  --secondary: var(--brand-secondary);
+  scrollbar-color: var(--background-lighter) var(--background);
 
   /* Buttons and Action Icons */
   --primary-button: #EBCA65;
@@ -47,7 +49,6 @@ body.Pipp_Petals {
   --icon-disabled: var(--disabled-button);
   --icon-disabled-overlay: var(--disabled-button-overlay);
   --icons-background: var(--neutral-02);
-  scrollbar-color: var(--background-lighter) var(--background);
 
   .textInputFieldWrapper .inputIcon {
     color: var(--text-secondary);
@@ -55,6 +56,43 @@ body.Pipp_Petals {
 
   .css-1ty026z {
     background-color: var(--text-secondary);
+  }
+
+  .css-1k33q06 {
+    fill: var(--primary);
+  }
+
+  .WebviewControls__icon {
+    color: var(--text-secondary);
+  }
+
+  .WebviewControls__icon:disabled {
+    color: var(--icon-disabled);
+  }
+
+  .notLoggedIn .button {
+    background: var(--background-lighter);
+  }
+
+  .updateIcon > * {
+    color: var(--text-secondary);
+  }
+
+  .recharts-surface > * {
+    color: var(--text-secondary);
+  }
+
+  .downIcon > * {
+    color: var(--text-default);
+  }
+
+  .alphabet-filter-button {
+    color: var(--text-default);
+  }
+
+  .alphabet-filter-button:not(.alphabet-filter-button--active):not(.alphabet-filter-button--disabled):hover {
+    color: var(--background-darker);
+    box-shadow: 0 0 0 1px var(--background-darker);
   }
 
   .Settings .Field label,
@@ -66,6 +104,20 @@ body.Pipp_Petals {
 
   .helpLink {
     color: var(--text-default);
+  }
+
+  .hiddenCheckbox:checked + .toggleSwitchWrapper::before {
+    background: var(--text-default);
+    border: 3px solid var(--text-default);
+  }
+
+  .toggleSwitchWrapper:before {
+    border: 3px solid var(--text-default);
+  }
+
+  .InfoIcon > *,
+  .helpIcon > * {
+    fill: var(--background-lighter);
   }
 
   .helpLink:hover {
@@ -83,6 +135,14 @@ body.Pipp_Petals {
   .popover-wrapper .popover {
     background-color: var(--background-lighter);
     color: var(--text-secondary);
+  }
+
+  .MuiTabs-root .MuiTabs-scroller .MuiTabs-flexContainer .MuiTab-root {
+    color: white;
+  }
+
+  .MuiTabs-root .MuiTabs-scroller .MuiTabs-flexContainer .Mui-selected {
+    color: var(--primary);
   }
 
   .smallTitle {
@@ -123,7 +183,8 @@ body.Pipp_Petals {
 
   .goToLibrary,
   .offline-message {
-    color: var(--text-default);
+    color: var(--text-secondary);
+    background: var(--text-default);
   }
 
   .runnerButtons .logged {
@@ -151,10 +212,6 @@ body.Pipp_Petals {
     color: var(--text-secondary);
   }
 
-  .installSteamButton {
-    background: var(--status-success);
-  }
-
   .InstallModal__sizeIcon,
   .InstallModal__sizeLabel {
     color: var(--text-default);
@@ -180,16 +237,6 @@ body.Pipp_Petals {
 
   .clickable {
     color: var(--accent);
-  }
-
-  .toolsWrapper .button,
-  .toolsWrapper .button.outline {
-    color: var(--text-default);
-  }
-
-  .toolsWrapper .button:hover,
-  .toolsWrapper .button.outline:hover {
-    color: var(--background-darker);
   }
 
   .tableFieldWrapper th {
@@ -260,6 +307,7 @@ body.Pipp_Petals {
     color: var(--text-secondary);
     fill: var(--text-secondary);
   }
+
 
   /* Sidebar */
   --navbar-active: var(--text-tertiary);
