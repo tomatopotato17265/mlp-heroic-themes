@@ -62,6 +62,14 @@ body.Pipp_Petals {
     fill: var(--primary);
   }
 
+  .css-1j7qk7u > svg {
+    fill: var(--secondary);
+  }
+
+  .WebviewControls {
+    border-bottom: 1px solid var(--secondary)
+  }
+
   .WebviewControls__icon {
     color: var(--text-secondary);
   }
@@ -147,10 +155,6 @@ body.Pipp_Petals {
 
   .smallTitle {
     color: var(--text-secondary);
-  }
-
-  .WebviewControls {
-    border-bottom: var(--background-darker);
   }
 
   .WebviewControls__urlInput {
@@ -260,7 +264,8 @@ body.Pipp_Petals {
     fill: var(--disabled-button);
   }
 
-  .FormControl__button {
+  .FormControl__button,
+  .FormControl--segmented > button {
     color: var(--text-default);
   }
 
